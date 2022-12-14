@@ -43,24 +43,24 @@
                     </h1>
 
                     <!-- hero form -->
-                    <form class="hero__form form">
+                    <form class="hero__form form" action="form.php" method="post">
                         <label class="form__label">
                             <svg width="24" height="20">
                                 <use href="./img/icons.svg#icon-user"></use>
                             </svg>
-                            <input type="text" placeholder="Введите имя" name="name" class="form__input">
+                            <input type="text" placeholder="Введите имя" name="name" class="form__input" required>
                         </label>
                         <label class="form__label">
                             <svg width="24" height="18">
                                 <use href="./img/icons.svg#icon-mail"></use>
                             </svg>
-                            <input type="text" placeholder="E-mail" name="mail" class="form__input">
+                            <input type="text" placeholder="E-mail" name="mail" class="form__input" required>
                         </label>
                         <label class="form__label">
                             <svg width="20" height="20">
                                 <use href="./img/icons.svg#icon-phone"></use>
                             </svg>
-                            <input type="text" placeholder="Телефон" name="phone" class="form__input">
+                            <input type="text" placeholder="Телефон" name="phone" class="form__input" required>
                         </label>
                         <button type="submit" name="access" class="form__access">получить доступ</button>
                     </form>
