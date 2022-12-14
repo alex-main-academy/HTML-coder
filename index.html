@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LANDING</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rubik:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- wrapper for background -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <nav class="header__navigation">
+                    <a href="./index.html" class="header__logo">TOP SIGNALS</a>
+                </nav>
+                <button type="button" name="get-info" class="header__getinfo">получить консультацию</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- hero section -->
+            <section class="hero">
+                <div class="container">
+                    <h1 class="hero__title"><span class="hero__title-white">ТОРГОВЫЕ СИГНАЛЫ</span><br> ОТ ЭКСПЕРТА
+                        КАЖДЫЙ
+                        ДЕНЬ
+                        В ВАШЕМ <a href="#" class="hero__title-blue">TELEGRAM</a>
+                    </h1>
+
+                    <!-- hero form -->
+                    <form class="hero__form form">
+                        <label class="form__label">
+                            <svg width="24" height="20">
+                                <use href="./img/icons.svg#icon-user"></use>
+                            </svg>
+                            <input type="text" placeholder="Введите имя" name="name" class="form__input">
+                        </label>
+                        <label class="form__label">
+                            <svg width="24" height="18">
+                                <use href="./img/icons.svg#icon-mail"></use>
+                            </svg>
+                            <input type="text" placeholder="E-mail" name="mail" class="form__input">
+                        </label>
+                        <label class="form__label">
+                            <svg width="20" height="20">
+                                <use href="./img/icons.svg#icon-phone"></use>
+                            </svg>
+                            <input type="text" placeholder="Телефон" name="phone" class="form__input">
+                        </label>
+                        <button type="submit" name="access" class="form__access">получить доступ</button>
+                    </form>
+
+                    <!-- hero features -->
+                    <ul class="hero__features list">
+                        <li class="list__item list__item-3">
+                            <p class="list__title">3 рынка</p>
+                            <span class="list__desc">фондовый, товарный, валютный</span>
+                        </li>
+                        <li class="list__item list__item-15">
+                            <p class="list__title">15%</p>
+                            <span class="list__desc">средняя доходность в месяц</span>
+                        </li>
+                        <li class="list__item list__item-10">
+                            <p class="list__title">до 10</p>
+                            <span class="list__desc">торговых сигналов в день</span>
+                        </li>
+                        <li class="list__item list__item-90">
+                            <p class="list__title">до 90%</p>
+                            <span class="list__desc">прибыльность сигналов</span>
+                        </li>
+                        <li class="list__item list__item-80">
+                            <p class="list__title">от 80</p>
+                            <span class="list__desc">пунктов за сделку</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- start section -->
+            <section class="start">
+                <div class="container">
+                    <h2 class="start__title">КАК НАЧАТЬ ЗАРАБАТЫВАТЬ НА СИГНАЛАХ</h2>
+                    <ul class="start__list">
+                        <li class="start__item">
+                            <h3 class="start__subtitle">Кто разработчик?</h3>
+                            <p class="start__text">Торговые сигналы базируются
+                                на стратегиях, которые разрабатывают управляющие активами
+                            </p>
+                        </li>
+                        <li class="start__item">
+                            <h3 class="start__subtitle">Как это работает?</h3>
+                            <p class="start__text">Торговые сигналы будут приходить вам в Телеграм-канал, а вы будете
+                                открывать
+                                и закрывать сделки
+                                в телефоне</p>
+                        </li>
+                        <li class="start__item">
+                            <h3 class="start__subtitle">Как протестировать?</h3>
+                            <p class="start__text">Убедиться в том, что торговые сигналы прибыльные, можно,
+                                протестировав
+                                роботов, которые их присылают</p>
+                        </li>
+                        <li class="start__item">
+                            <h3 class="start__subtitle">Как снизить риски при торговле по сигналам?</h3>
+                            <p class="start__text">Сигналы можно протестировать
+                                на демо счете в течение недели, затем начать торговать минимальными объемами </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

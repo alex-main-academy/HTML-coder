@@ -1,0 +1,235 @@
+.hero {
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    @media screen and(max-width:480px) {
+        padding-top: 0;
+    }
+}
+
+.hero .container {
+    background-image: url(../img/hero/mobile.png), url(../img/hero/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right 100px top 0, center top 210px;
+
+    @media screen and(max-width:1170px) {
+        background-image: url(../img/hero/arrow.png);
+        background-position: right top 210px;
+    }
+
+    @media screen and(max-width:480px) {
+        background-image: none;
+    }
+}
+
+.hero__title {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.22;
+    letter-spacing: 0.04em;
+    color: #195B84;
+
+    width: 690px;
+    margin-bottom: 40px;
+    padding-top: 65px;
+
+    @media screen and(max-width:768px) {
+        text-align: center;
+        font-size: 30px;
+        width: auto;
+    }
+}
+
+.hero__title-white {
+    background-color: #FFFFFF;
+    padding: 0 10px 0 0px;
+}
+
+.hero__title-blue {
+    color: var(--secondary-text-color);
+}
+
+// form
+.hero__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @media screen and(max-width:768px) {
+        align-items: center;
+    }
+}
+
+.form__label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    width: 380px;
+    padding: 18px 14px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+    border-radius: 5px;
+
+    @media screen and(max-width:480px) {
+        width: 100%;
+    }
+}
+
+.form__input {
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--secondary-back-color);
+
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 0;
+    outline: none;
+
+    &::placeholder {
+        font-family: var(--secondary-font);
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--secondary-back-color);
+    }
+}
+
+.form__access {
+    font-family: 'Rubik';
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    width: 380px;
+    margin-top: 15px;
+    margin-bottom: 144px;
+    padding: 23px 0;
+
+    background: var(--secondary-text-color);
+    box-shadow: 15px 5px 20px rgba(45, 175, 215, 0.2);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+
+    @media screen and(max-width:480px) {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+}
+
+// hero features
+.hero__features {
+    display: flex;
+    align-items: flex-start;
+
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 20px rgba(0, 85, 112, 0.15);
+    border-radius: 5px;
+    padding: 25px 0;
+
+    @media screen and(max-width:1170px) {
+        padding: 10px 0;
+    }
+
+    @media screen and(max-width:768px) {
+        flex-direction: column;
+    }
+
+    @media screen and(max-width:480px) {
+        padding: 0 15px;
+    }
+}
+
+.list__item {
+    background-repeat: no-repeat;
+    background-position: right 10px bottom 5px;
+
+    text-align: center;
+
+    width: calc(100% / 5);
+    padding: 35px 0;
+    height: 150px;
+
+    @media screen and(max-width:1170px) {
+        padding: 20px 0;
+    }
+
+    @media screen and(max-width:768px) {
+        width: 100%;
+        background-position: center;
+    }
+}
+
+.list__item-3 {
+    background-size: 85px;
+    background-image: url(../img/hero/3.png);
+
+    @media screen and(max-width:1170px) {
+        background-size: 65px;
+    }
+}
+
+.list__item-15 {
+    background-image: url(../img/hero/15.png);
+
+    @media screen and(max-width:1170px) {
+        background-size: 120px;
+    }
+}
+
+.list__item-10 {
+    background-image: url(../img/hero/10.png);
+
+    @media screen and(max-width:1170px) {
+        background-size: 120px;
+    }
+}
+
+.list__item-90 {
+    background-image: url(../img/hero/90.png);
+
+    @media screen and(max-width:1170px) {
+        background-size: 120px;
+    }
+}
+
+.list__item-80 {
+    background-image: url(../img/hero/80.png);
+
+    @media screen and(max-width:1170px) {
+        background-size: 120px;
+    }
+}
+
+.list__item+.list__item {
+    border-left: 5px solid var(--primary-back-color);
+    border-radius: 5px;
+
+    @media screen and(max-width:768px) {
+        border: none;
+    }
+}
+
+.list__title {
+    font-family: 'Rubik';
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #195B84;
+
+    margin-bottom: 6px;
+}
+
+.list__desc {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.04em;
+    color: #195B84;
+}
